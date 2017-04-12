@@ -1,1 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
+.idea
+.gitignore
+chapter_3/random_story/fortest.js
+chapter_3/random_story/node_modules/
