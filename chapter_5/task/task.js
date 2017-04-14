@@ -34,7 +34,7 @@ function loadOrInitializeTaskArray(file, cb) {
 function showTasks(file) {
   loadOrInitializeTaskArray(file, function (tasks) {
     for (var i in tasks) {
-      console.log(tasks[i] + '\n');
+      console.log(i + ' > ' + tasks[i] + '\n');
     }
   });
 }
