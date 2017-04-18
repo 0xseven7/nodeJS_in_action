@@ -1,4 +1,10 @@
 .idea
 .gitignore
 chapter_3/random_story/fortest.js
-chapter_3/random_story/node_modules/
+chapter_4/key-cert.pem
+chapter_4/key.pem
+chapter_4/static_file-server/favicon.ico
+chapter_5/task/tasks
+# 忽略node_modules文件夹
+*node_modules/
+*a
