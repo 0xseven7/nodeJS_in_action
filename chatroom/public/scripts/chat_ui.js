@@ -1,19 +1,19 @@
 var socket = io.connect();
-function createElementByType(message) {
+var createElementByType = function (message) {
   switch (message.type) {
     // 不可信任的消息, 用户输入消息
     case 0:
     case 1:
       var type = message.type;
       message = $('<i></i>').text(message.text);
-      return $('<div class="user-message user-message-'+ type +'"></div>').append(message.text);
+      return $('<div class="user-message user-message-'+ type +'"></div>').append(message);
       break;
     default:
     case 2:
       // 可信任消息, 系统消息
       return $('<div class="system-message"></div>').html('<i>' + message.text + '</i>');
   }
-}
+};
 // 不可信任的消息
 // function divEscapedContentElement(message, className) {
 //   message = $('<i></i>').text(message);
@@ -45,7 +45,7 @@ function processUserInput(chatApp, socket) {
       text: message
     };
     $message.append(createElementByType(message));
-    $message.scrollTop($message.prop('scrollHeight'));
+    // $message.scrollTop($message.prop('scrollHeight'));
   }
   $sendMessage.val('');
 }
@@ -107,5 +107,11 @@ $(document).ready(function () {
   $('#send-form').submit(function () {
     processUserInput(chatAPP, socket);
     return false;
+  });
+  $sendMessage.keydown(function (event) {
+    if (event.which === 13) {
+      processUserInput(chatAPP, socket);
+      return false;
+    }
   })
 });

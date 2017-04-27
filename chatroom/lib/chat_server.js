@@ -41,7 +41,7 @@ var joinRoom = function (socket, room) {
     text: '欢迎' + nickNames[socket.id] + '加入 ' + room + '.'
   });
   var userInRoom = io.sockets.adapter.rooms[room];
-  if (userInRoom.length > 1) {
+  if ( userInRoom && userInRoom.length > 1) {
     var userInRoomSummary = room + '房间内的用户有: ';
     var count = 0;
     for (var key in userInRoom.sockets) {

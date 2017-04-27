@@ -43,8 +43,7 @@ html, body {
 	background-color: #2E3238;
 	color: #eee;
 }
-
-#room-list-hook .user-message{
+#room-list-hook .system-message {
 	padding: 10px;
 }
 #message {
@@ -58,17 +57,24 @@ i {
 	font-style: normal;
 }
 #message .user-message {
-	padding: 5px 0;
+	margin: 5px 0;
+	clear: both;
 }
-#message .user-message i{
+#message .user-message i {
 	display: inline-block;
 	padding: 5px 8px;
 	border-radius: 8px;
 	font-size: 14px;
 	background-color: #B2E281;
 }
-
+#message .user-message-0 {
+	float: right;
+}
+#message .user-message-0 i {
+	background-color: #fff
+}
 #message .system-message {
+	clear: both;
 	text-align: center;
 	font-style: normal;
 	font-size: 14px;
