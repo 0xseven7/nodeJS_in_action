@@ -7,4 +7,6 @@ chapter_4/static_file-server/favicon.ico
 chapter_5/task/tasks
 # 忽略node_modules文件夹
 *node_modules/
-*a
+chapter_7/photos/public/
+chapter_7/photos/bin/gamersky_11small_22.jpg
+

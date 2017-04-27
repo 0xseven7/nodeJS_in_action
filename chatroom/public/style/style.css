@@ -1,0 +1,100 @@
+html, body, h1, h2, h3, h4, h5, h6,
+div, span, input {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	position: relative;
+}
+#content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 600px;
+	transform: translate(-50%, -50%);
+}
+#message-area {
+	float: left;
+	width: 600px;
+	height: 100%;
+}
+.header {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+#room-title {
+	background-color: #eee;
+	border-bottom: 1px solid #d6d6d6;
+}
+#room-list .header {
+	border-bottom: 1px solid #24272C;
+}
+#room-list {
+	box-sizing: border-box;
+	width: 200px;
+	height: 100%;
+	float: left;
+	background-color: #2E3238;
+	color: #eee;
+}
+
+#room-list-hook .user-message{
+	padding: 10px;
+}
+#message {
+	box-sizing: border-box;
+	padding: 10px;
+	height: 400px;
+	overflow-y: auto;
+	background-color: #eee;
+}
+i {
+	font-style: normal;
+}
+#message .user-message {
+	padding: 5px 0;
+}
+#message .user-message i{
+	display: inline-block;
+	padding: 5px 8px;
+	border-radius: 8px;
+	font-size: 14px;
+	background-color: #B2E281;
+}
+
+#message .system-message {
+	text-align: center;
+	font-style: normal;
+	font-size: 14px;
+	color: #aaa;
+}
+#send-form {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background-color: #eee;
+}
+#send-message {
+	padding: 10px;
+	width: 100%;
+	height: 80%;
+	border: none;
+	outline: medium;
+	box-sizing: border-box;
+	border-top: 1px solid #d6d6d6;
+	background-color: #eee;
+	font-size: 14px;
+	font-family: "Microsoft YaHei UI", sans-serif;
+}
+#send-button {
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
