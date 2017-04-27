@@ -1,0 +1,14 @@
+{
+  "name": "shoutbox",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node app"
+  },
+  "author": "zcx",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.9.5"
+  },
+  "main": "index.js",
+  "description": ""
+}
